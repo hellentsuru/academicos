@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    background-color: black;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+}
+li{
+    list-style: none;
+    padding: 15px;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: white;  
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
+}
+nav li:nth-child(1):hover{
+    background-image: url(../img/html5.png);
+    background-repeat: no-repeat;
+    padding-right: 40px;
+    background-position: 82px 14px;
+    background-size: 20%;
+    box-shadow: inset 0 0 1em orange;
+    transition: all 0.6s;
+}
+nav li:nth-child(2):hover{
+    background-image: url(../img/css3.png);
+    background-repeat: no-repeat;
+    padding-right: 40px;
+    background-position: 83px 14px;
+    background-size: 20%;
+    box-shadow: inset 0 0 1em rgba(59, 154, 219);
+    transition: all 0.6s;
+}
+nav li:nth-child(3):hover{
+    background-image: url(../img/javascript.png);
+    background-repeat: no-repeat;
+    padding-right: 40px;
+    background-position: 82px 14px;
+    background-size: 20%;
+    box-shadow: inset 0 0 1em gold;
+    transition: all 0.6s;
+}
+header{
+    text-align: center;
+}
+header img{
+    width: 100%;
+}
+header h1{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+header h1:hover{
+    animation-name: title1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    }
+@keyframes title1{
+    0% {
+      font-size: 19px;
+    }
+    50% {
+      font-size: 26px;
+    }
+}
+header h3{
+    font-size: 14px;
+    color: rgba(59, 154, 219);  
+    padding-bottom: 30px;
+    animation-name: cor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3s;
+}
+@keyframes cor {
+    from{
+         color: rgba(59, 154, 219);
+    }
+    to{
+           color: gold;
+     }
+}
+section:nth-child(1){
+    background-color: lightgray;
+}
+.sessao1, .sessao2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px 40px 15px; 
+}
+.sessao1 h2{
+    color: green;
+}
+section p{
+    line-height: 1.5;
+}
+.primeiro img{
+    width: 90px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.primeiro p{
+    padding: 20px;
+}
+.sessao2, .sessao3, .sessao4{
+    padding: 30px;
+    text-align: center;
+}
+.segundo img, .terceiro img, .quarto img{
+    width: 300px;
+    padding-bottom: 50px;
+}
+.sessao2 p, .sessao3 p, .sessao4 p{
+    text-align: justify;
+    padding-top: 15px;
+}
+footer{
+    background-color: black;
+    padding: 20px;
+}
+footer p{
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width: 400px){
+    .escondido{
+        display: none;
+    }
+}
+@media screen and (min-width:1000px) {
+    nav{
+        text-align: right;  
+    }
+    .primeiro, .segundo, .terceiro, .quarto{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .primeiro, .segundo, .quarto{
+        display: flex;
+        flex-direction: row;
+    }
+    .primeiro img{
+        width: 80px;
+    }
+    .terceiro{
+        display: flex;
+        flex-direction: row-reverse;    
+    }
+    .sessao2 .segundo img, .sessao4 .quarto img{
+        width: 410px;
+        padding-right: 30px;
+    }
+    .sessao3 .terceiro img{
+        width: 410px;
+        padding-left: 30px;
+    }
+    .sessao2 p{
+        padding-top: 18px;
+    }
+    header h3{
+        font-size: 20px;
+        animation-name: cor;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 3s;
+    }
+    @keyframes cor {
+        from{
+            color: rgba(59, 154, 219);
+        }
+        to{
+            color: orange;
+        }
+    }
+    header h1{
+        font-size: 34px;
+        animation-name: title1;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        }
+    @keyframes title1{
+        0% {
+          font-size: 30px;
+        }
+        50% {
+          font-size: 38px;
+        }
+        75% {
+            font-size: 46px;
+          }
+    }  
+}
+
+
+
