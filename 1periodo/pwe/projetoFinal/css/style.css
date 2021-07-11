@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e9e3f4;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content:center;
+    background-color: rgb(126, 119, 189);
+}
+li{
+    padding: 15px 20px;
+}
+header a:link, header a:visited{
+    text-decoration: none;
+    color: white; 
+    font-family: pattaya;
+}
+a:link, a:visited{
+    text-decoration: none;
+}
+nav li:hover{
+   box-shadow: inset 0 0 2em rgb(255,255,255);
+   transition: all 0.5s;
+}
+.topo {
+    color: rgb(126, 119, 189);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 130px);
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/supply-chain-intertruck-900x460-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.8;
+}
+.topo h1{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+}
+.topo h1:hover{
+    animation-name: title;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    }
+@keyframes title{
+    0% {
+      font-size: 30px;
+    }
+    50% {
+      font-size: 57px;
+    }
+}
+.introducao h1, .caracteristica h1{
+    text-align: center;
+    font-size: 45px;
+    transition: all 0.5s;
+}
+.introducao h1:hover, .caracteristica h1:hover{
+    letter-spacing: 7px;
+    text-shadow: 2px 2px 2px rgb(126, 119, 189);
+}
+h2{
+    color: gray;
+}
+section{
+    padding: 20px 25px;
+}
+section p{
+    padding: 5px 0;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+section img{
+    width: 100%;
+    padding: 15px 0;
+}
+div > h2{
+    text-align: center;
+    font-size: 28px;
+}
+.sistemas_embarcados h2, .tendencias h2{
+    font-size: 30px;
+}
+.colunas{
+    padding: 10px 30px;
+}
+.colunas h1{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.container h2{
+    font-size: 21px;
+}
+.cor-titulo2{
+    color: rgb(126, 119, 189);
+}
+.coluna1, .coluna2, .coluna3{
+    height: 490px;
+    width: 320px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+.coluna1 img{
+    width: 290px;
+}
+.coluna3 img{
+    width: 258px;
+}
+.coluna2 img{
+    width: 276px;
+}
+hr{
+    border: 0;
+    width: 100%;
+    height: 2px;
+    margin-top: 55px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+}
+button{
+    display: block;
+    width: 60%;
+    margin: 15px auto;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: rgb(126, 119, 189);
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+button:hover{
+    background-color: #fff;
+    color: rgb(126, 119, 189);
+    cursor: pointer;
+}
+.informacoes, .informacoes2{
+    background-color: rgb(255,192,203, 0.4);
+}
+.informacoes h1{
+    font-size: 35px;
+}
+.informacoes h1, .informacoes p{
+    text-align: center;
+}
+.box1{
+    background-image: url(../images/simbolo.png);
+    background-size: 50px;
+}
+.box2{
+    background-image: url(../images/simbolo2.jpg);
+    background-size: 70px;
+}
+.box3{
+    background-image: url(../images/INFORMATICA.png);
+    background-size: 60px;
+}
+.box1, .box2, .box3{
+    background-color: #fff;
+    padding: 80px 40px;
+    margin: 15px auto;
+    height: 310px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position: center 10px;
+}
+footer{
+    background-color: rgb(126, 119, 189);
+    padding: 23px;
+    text-align: center;    
+}
+footer p{
+    font-size: 20px;
+    font-family: pattaya;
+    color: #fff;
+}
+@media screen and (max-width: 400px){
+    .display{
+        display: none;
+    }
+}
+@media screen and (min-width:1000px){
+    .topo h1{
+        font-size: 70px;
+        animation-name: title;
+        animation-duration: 2.3s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes title{
+        0% {
+          font-size: 50px;
+        }
+        50% {
+          font-size: 60px;
+        }
+        75% {
+          font-size: 80px;
+        }
+    }
+    .section_size{
+        width: 1200px;
+        margin: auto;
+    }
+    li{
+        padding-right: 25px;
+        padding-left: 25px;
+        font-size: 18px;
+    }
+    header ul{
+        justify-content: flex-end;
+    }
+    .conceito h2, .funcionamento h2, .sistemas_embarcados h2, .tendencias h2{
+        text-align: left;
+    }
+    .conceito, .content-pag2{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .funcionamento, .content2-pag2, .container2{
+        display: flex;
+        flex-direction: row;
+    }
+    .conceito p{
+        padding-right: 25px;
+    }
+    .funcionamento p, .funcionamento h2, .tendencias h2{
+        padding-left: 25px;
+    }
+    .conceito h2, .funcionamento h2{
+        padding-top: 15px;
+    }
+    .sistemas_embarcados{
+        padding: 15px 50px;
+    }
+    .sistemas_embarcados p{
+        padding-bottom: 15px;
+    }
+    .tendencias p{
+        padding: 10px 30px;
+    }
+    .container1-pag2{
+        width: 600px;
+        border: 1px solid black;
+    }
+    .conceito img, .funcionamento img{
+        width: 550px;
+        padding-top: 40px;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        padding: 0 30px;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+    .coluna1, .coluna2, .coluna3{
+        margin-right:20px;
+    }
+    .coluna1, .coluna2, .coluna3{
+        width: 350px;
+        height: 470px;
+        margin: auto;
+    }
+    .container h2{
+        font-size: 23px;
+    }
+    .content-pag2 img{
+        width: 550px;
+        padding-top: 30px;
+    }
+    .content2-pag2 img{
+        width: 550px;
+    }
+    .sessao_pag2{
+        margin: 0 70px;
+    }
+    .box1, .box2, .box3{   
+        width: 370px;
+        height: 270px;
+        margin: auto;
+    }
+    .container2 h2{
+        padding-bottom: 15px;
+    }
+}
